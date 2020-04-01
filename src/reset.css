@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before,*::after{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+
+h1,h2,h3,h4,h6{
+  color: var(--h-tag-color);
+}
+
+h5{
+  color: var(--font-weight-color);
+}
+h1{
+  font-size: 30px;
+}
+
+h3,h5{
+  font-size: 18px;
+}
+p,span{
+  font-size: 14px;
+}
+p,span{
+  color: var(--font-color);
+}
+
+hr{
+  border: .5px solid var(--line-color);
+}
+
+strong{
+  color: var(--strong-font-color);
+  font-size: 16px;
+}
+
+div{
+  font-size: 16px;
+}

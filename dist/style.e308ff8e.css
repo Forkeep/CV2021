@@ -1,0 +1,231 @@
+body {
+  background-color: var(--wrapper-color);
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  background-color: var(--theme-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+}
+
+header p {
+  color: #efefef;
+}
+
+
+aside {
+  border-right: 1px solid var(--line-color);
+  background-color: white;
+  width: 250px;
+  position: relative;
+  padding-top: 90px;
+
+}
+
+#avatar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -75px;
+}
+
+#avatar img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+aside .item {
+  margin: 20px 10px 0 20px;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid var(--line-color);
+}
+
+aside .item h3 {
+  margin: 20px 0;
+}
+
+aside .item .info-one {
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .item .info-one .title {
+  width: 100px;
+  position: relative;
+}
+
+aside .item .info-one .title::after {
+  content: ':';
+  position: absolute;
+  right: 10%;
+}
+
+aside .item .info-one .content {
+  flex-grow: 1;
+}
+
+aside #skills {
+  margin-top: 50px;
+}
+
+aside #skills .skills-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside #skills .skills-one span {
+  width: 80px;
+
+}
+
+aside #skills .skills-one > div {
+  flex-grow: 1;
+  height: 4px;
+  position: relative;
+
+  background-color: var(--line-color);
+}
+
+
+aside #skills .skills-one > div .inner {
+  position: absolute;
+  background-color: var(--theme-color);
+  height: 4px;
+}
+
+aside #contact .contact-one {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+aside #contact .contact-one svg {
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+aside #contact .contact-one span {
+  margin-left: 30px;
+}
+
+aside #ability{
+  border: 1px solid red;
+  max-width: 100%;
+  z-index: 1;
+  margin: -30px 0;
+}
+
+main {
+  background-color: white;
+  flex-grow: 1;
+  min-height: calc(100vh - 120px);
+  max-width: 650px
+}
+
+main .item {
+  margin: 30px 30px 0 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+main .item h3 {
+  margin-bottom: 20px;
+}
+
+main .item .edu-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+main .item .course {
+  margin-bottom: 10px;
+}
+
+main #project .project-detail {
+  list-style: initial;
+  margin-left: 2em;
+  font-size: 12px;
+}
+
+main #honor .honor-inner {
+  display: flex;
+  justify-content: space-between;
+}
+main #honor .honor-inner .scholarship{
+  width: 40%;
+}
+main #honor .honor-inner .competition{
+  width: 60%;
+}
+
+main #honor .honor-inner{
+  margin-left: 20px;
+}
+main #honor ul{
+  list-style: initial;
+}
+
+
+@media (max-width: 500px) {
+  aside{
+    flex-grow: 1;
+    padding-top: 30px;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #avatar {
+    top: -30px;
+  }
+  aside #avatar img{
+    width: 100px;
+    height: 100px;
+  }
+  main #honor .honor-inner {
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+  }
+  main #honor .honor-inner .scholarship{
+    width: 100%;
+  }
+  main #honor .honor-inner .competition{
+    width: 100%;
+  }
+  #ability{
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

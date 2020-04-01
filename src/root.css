@@ -1,0 +1,10 @@
+:root{
+  --wrapper-color:#efefef;
+  --theme-color:#3c3c3c;
+  --font-color:#666666 ;
+  --h-tag-color: #6a98c6;
+  --line-color : #cccccc;
+  --font-weight-color:#333333;
+  --debug-border: 1px solid red;
+  --strong-font-color: #f92672;
+}
